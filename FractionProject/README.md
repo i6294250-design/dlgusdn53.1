@@ -27,7 +27,7 @@ FractionProject/
 │   └─ main.c             <-- 직사각형 둘레/넓이 계산
 │
 └─ README.md              <-- 프로젝트 설명
-
+```text
 ---
 #3. Fraction 라이브러리
 ##3.1 기능
