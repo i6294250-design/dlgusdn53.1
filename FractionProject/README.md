@@ -1,57 +1,29 @@
-# Fraction Project
+# FractionProject
 
-## 1. 분수(Fraction) ADT
+## 1. 프로젝트 개요
+이 프로젝트는 세 가지 주요 기능을 포함합니다:
 
-- 정수형 분자와 분모로 이루어진 분수 자료형(Fraction)을 구현
-- 지원 기능:
-  - 사칙연산: `+`, `-`, `*`, `/` (결과는 기약분수로 출력)
-  - 기약분수 변환: 입력 분수를 기약분수로 변환
-  - 문자열 ↔ 분수 변환:
-    - "A/B" 형태 문자열을 Fraction으로 변환
-    - Fraction을 "A/B" 형태로 출력
-
-- 예시:
-
-입력: 2/5 + 2/4
-출력: 9/10
-
+1. **Fraction 라이브러리**: 분수 ADT 구현 (분수 사칙연산, 기약분수 변환, 문자열 ↔ 분수 변환)  
+2. **Math 라이브러리**: 두 정수의 최대공약수(GCD)와 최소공배수(LCM) 계산  
+3. **Rectangle 프로그램**: 명령줄 인자를 이용해 직사각형의 가로, 세로를 입력받아 둘레와 넓이를 계산
 
 ---
 
-## 2. GCD, LCM 계산
+## 2. 폴더 구조
 
-- 두 정수를 입력받아 최대공약수(GCD)와 최소공배수(LCM) 계산
-- 알고리즘:
-- GCD: 유클리드 호제법
-- LCM: (a * b) / GCD(a, b)
-
-- 예시:
-
-입력: 18 24
-출력: GCD: 6, LCM: 72
-
-
----
-
-## 3. 직사각형 둘레 및 넓이 계산
-
-- 분수 라이브러리를 활용하여 직사각형의 가로, 세로를 입력받아 둘레와 넓이 계산
-- 명령줄 인자 사용 (`main(int argc, char** argv)`)
-- 예시:
-
-입력(CMD): ./program.exe 3/7 4/9
-출력: Perimeter: 110/63, Area: 4/21
-
-
----
-
-## 4. 파일 구성
-
-| 파일명 | 설명 |
-|--------|------|
-| `my_fraction.h` | 분수 자료형 정의 및 함수 선언 |
-| `my_fraction.c` | 분수 기능 구현 |
-| `my_math.h` | GCD, LCM 함수 선언 |
-| `my_math.c` | GCD, LCM 구현 |
-| `main.c` | 직사각형 둘레, 넓이 계산 및 테스트 |
-| `README.md` | 프로젝트 설명 |
+```text
+FractionProject/
+│
+├─ Fraction/
+│   ├─ my_fraction.h      <-- 분수 ADT 헤더
+│   ├─ my_fraction.c      <-- 분수 ADT 구현
+│   └─ main.c             <-- 분수 테스트용
+│
+├─ Math/
+│   ├─ my_math.h          <-- GCD/LCM 헤더
+│   └─ my_math.c          <-- GCD/LCM 구현
+│
+├─ Rectangle/
+│   └─ main.c             <-- 직사각형 둘레/넓이 계산
+│
+└─ README.md              <-- 프로젝트 설명
