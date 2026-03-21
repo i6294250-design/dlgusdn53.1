@@ -30,7 +30,8 @@ FractionProject/
 3. Fraction 라이브러리
 3.1 기능
 분수 구조체(Fraction)
-int numerator (분자), int denominator (분모)
+int numerator (분자)
+int denominator (분모)
 사칙연산: add, subtract, multiply, divide
 기약분수 변환: simplify
 문자열 ↔ Fraction 변환:
